@@ -2,7 +2,7 @@
 
 #uiinspiration #uideveloper #react #reactjs #html #css #scss 
 
-Learn how to convert a UI Design of a Crypto Wallet App to React JS using HTML and SCSS. Don't forget to like, share and subscribe if you found the video helpful.
+Learn how to convert a UI Design of a Crypto Wallet App to React JS using HTML, SCSS and CSS Grid. Don't forget to like, share and subscribe if you found the video helpful.
 
 For video walkthrough:
 https://youtu.be/CZLXa42EV9g
