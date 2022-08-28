@@ -1,0 +1,55 @@
+@import "/src/Colors.scss";
+
+.ConversionCard {
+  background: $light-gray-7;
+  margin-right: 40px;
+  padding: 40px 30px;
+  position: relative;
+  hr {
+    border-bottom: 0;
+    margin: 5px 0;
+  }
+  hr.Purple {
+    border-top: 2px solid $light-purple;
+  }
+  hr.Light {
+    border-top: 2px solid $light-gray-2;
+  }
+  .ConversionToFrom {
+    background: $white;
+    padding: 20px;
+    .LabelBlock {
+      margin-right: 20px;
+    }
+    .Name {
+      font-family: "Lato";
+      font-weight: 600;
+      font-size: 10px;
+      color: $light-gray-3;
+      margin-top: 5px;
+    }
+    .Icon {
+      padding: 10px;
+      border-radius: 50%;
+      color: $light-purple-2;
+      font-size: 1.2rem;
+    }
+  }
+  .VLine {
+    border-left: 1px solid $light-gray-2;
+    height: 40%;
+  }
+  .Icon {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .ConvertBtn {
+    position: absolute;
+    background: $dark-gray-3;
+    color: $light-gray-2;
+    border: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    right: -20px;
+  }
+}

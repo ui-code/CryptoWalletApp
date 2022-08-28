@@ -1,0 +1,42 @@
+@import "/src/Colors.scss";
+
+.NavBar {
+  display: none;
+  grid-area: nav;
+  background: $dark-gray-1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  width: 70px;
+  border-radius: 30px;
+  li {
+    list-style: none;
+  }
+  i {
+    color: $dark-gray-2;
+    font-size: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  li:first-child i {
+    color: $white;
+  }
+  i.active::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: $white;
+    border-radius: 50%;
+    bottom: -8px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .NavBar {
+    display: flex;
+  }
+}

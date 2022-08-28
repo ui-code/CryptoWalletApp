@@ -1,0 +1,35 @@
+@import "/src/Colors.scss";
+
+.Steps {
+  grid-area: steps;
+  padding: 20px;
+  .Label {
+    span {
+      font-size: 14px;
+      color: $light-gray-1;
+    }
+    span.Active {
+      font-weight: 600;
+      color: $dark-gray-3;
+    }
+  }
+  .Line {
+    width: 20%;
+    height: 1px;
+    background: $light-gray-2;
+    position: relative;
+  }
+  .Line.Active::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    background: $light-gray-4;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .Steps {
+    padding-top: 55px;
+  }
+}

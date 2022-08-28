@@ -1,0 +1,159 @@
+@import "/src/Colors.scss";
+
+.App {
+  ::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: $light-gray-2;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $light-gray-3;
+  }
+  background: $light-gray-6;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Container {
+    overflow: hidden;
+    width: 100%;
+    border: 6px solid $black;
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "wallet-list"
+      "steps"
+      "convert-details";
+  }
+
+  .Flex {
+    display: flex;
+  }
+  .Row {
+    flex-direction: row;
+  }
+  .Col {
+    flex-direction: column;
+  }
+  .WFull {
+    width: 100%;
+  }
+  .JustifyBetween {
+    justify-content: space-between;
+  }
+  .JustifyCenter {
+    justify-content: center;
+  }
+  .ItemsEnd {
+    align-items: flex-end;
+  }
+  .ItemsCenter {
+    align-items: center;
+  }
+  .FontTransformY {
+    transform: scaleY(1.5);
+  }
+  .Font400 {
+    font-weight: 400;
+  }
+  .Font600 {
+    font-weight: 600;
+  }
+  .Font700 {
+    font-weight: 700;
+  }
+  .FontSize1-4 {
+    font-size: 1.4rem;
+  }
+  .FontSize10 {
+    font-size: 10px;
+  }
+  .FontSize12 {
+    font-size: 12px;
+  }
+  .FontSize20 {
+    font-size: 20px;
+  }
+  .BgDarkGray3 {
+    background: $dark-gray-3;
+  }
+  .BgLightGray2 {
+    background: $light-gray-2;
+  }
+  .ColorLightGray1 {
+    color: $light-gray-1;
+  }
+  .ColorLightGray3 {
+    color: $light-gray-3;
+  }
+  .ColorLightGray4 {
+    color: $light-gray-4;
+  }
+  .ColorLightGray5 {
+    color: $light-gray-5;
+  }
+  .ColorDarkGray3 {
+    color: $dark-gray-3;
+  }
+  .Mx30 {
+    margin: 0 30px;
+  }
+  .My20 {
+    margin: 20px 0;
+  }
+  .My30 {
+    margin: 30px 0;
+  }
+  .Mt5 {
+    margin-top: 5px;
+  }
+  .Mt20 {
+    margin-top: 20px;
+  }
+  .Mt30 {
+    margin-top: 30px;
+  }
+  .Mt40 {
+    margin-top: 40px;
+  }
+  .Mr5 {
+    margin-right: 5px;
+  }
+  .Mb5 {
+    margin-bottom: 5px;
+  }
+  .Ml15 {
+    margin-left: 15px;
+  }
+  .Ml30 {
+    margin-left: 30px;
+  }
+  .MlAuto {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .App {
+    height: 100vh;
+
+    .Container {
+      padding: 20px;
+      width: 67%;
+      height: 80%;
+      display: grid;
+      grid-template-columns: 70px 25% auto;
+      grid-template-rows: 10% 90%;
+      grid-template-areas:
+        "nav wallet-list steps"
+        "nav wallet-list convert-details";
+    }
+  }
+}

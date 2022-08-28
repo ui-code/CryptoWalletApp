@@ -1,0 +1,18 @@
+.ConvertDetails {
+  grid-area: convert-details;
+  overflow-x: auto;
+  .ConvertDetailsRow {
+    display: flex;
+    flex-direction: flex;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .ConvertDetails {
+    padding-top: 50px;
+    .ConvertDetailsRow {
+      flex-direction: row;
+      width: max-content;
+    }
+  }
+}

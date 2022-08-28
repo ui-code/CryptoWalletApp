@@ -1,0 +1,14 @@
+@import "/src/Colors.scss";
+
+.WalletList {
+  grid-area: wallet-list;
+  padding: 20px 20px 0 20px;
+  hr {
+    border-top: 1px solid $light-gray-2;
+    border-bottom: 0;
+    margin: 30px 0;
+  }
+  .Icon {
+    font-size: 1.3rem;
+  }
+}
